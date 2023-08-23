@@ -1,3 +1,13 @@
+#funções, são definidas pela palavra reservada 'def'
+
+def soma( x, y):
+    print(x)
+    print(y)
+    print ('Soma de x + y:', x + y)
+
+soma(5, 2)
+print('=========')
+
 #função eval() - evaluation
 #recebe como entrada uma string digitada pelo usuário - equação linear
 

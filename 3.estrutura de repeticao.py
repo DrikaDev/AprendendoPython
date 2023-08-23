@@ -1,5 +1,13 @@
-#while: usado para construir e controlar uma estrutura de decisão sempre que 
-#o numero de repetições for desconhecido
+#laços de repetição
+#Iteradores: iterar é repetir
+#repetem um trecho do código enquanto uma condição avalidada for verdadeira
+
+x = 1
+while x <= 10:
+    print (x)
+    x = x + 1
+
+print('==================')
 
 numero = 1
 
@@ -11,11 +19,15 @@ while numero != 0:
     else:
         print('Número ímpar.')
 
+print('==================')
+
 #for seguido da variavel de controle'c'
 nome = 'Adriana'
 
 for c in nome:
     print(c)
+
+print('==================')
 
 #enumerate para retornar à posição de cada item dentro da sequência
 nome = 'Nicolas'
@@ -23,14 +35,18 @@ nome = 'Nicolas'
 for i, c in enumerate (nome):
     print(f'Posição = {i}, valor = {c}')
 
+print('==================')
+
 #break
 disciplina = 'Linguagem de programação'
 
 for c in disciplina:
-    if c == 'g':
+    if c == 'a':
         break
     else:
         print(c)
+
+print('==================')
 
 #continue
 linguagem = "Python"
@@ -40,3 +56,5 @@ for c in linguagem:
         continue
     else:
         print(c)
+
+print('==================')
