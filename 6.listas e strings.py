@@ -88,3 +88,59 @@ print('==================')
 #Substituir partes de uma string:
 #método .replace
 print('Substituir rei pela palavra rainha:', minha_string.replace('rei', 'rainha'))
+print('==================')
+
+#len para verificar o tamanho da lista:
+lista_frutas = ['banana', 'abacaxi', 'uva', 'melancia']
+print(lista_frutas)
+print(lista_frutas[3])
+print('==================')
+for item in lista_frutas:
+    print(item)
+print('==================')
+tamanho = len(lista_frutas)
+print(tamanho)
+print('==================')
+
+#reverse
+lista_frutas.sort()
+print("lista ordenada", lista_frutas)
+lista_frutas.sort(reverse=True)
+print("lista invertida", lista_frutas)
+print('==================')
+
+#.append - para adicionar elementos ao final da lista
+lista_frutas.append('limão')
+print(lista_frutas)
+print('==================')
+
+#verificando se um elemento pertence a uma lista
+if 'limão' in lista_frutas:
+    print('Esta fruta está na lista.')
+
+#apagando um elemento da lista
+del lista_frutas[3] #aqui deleta apenas o item 3
+print (lista_frutas)
+del lista_frutas[2:] #aqui deleta do item 2 em diante
+print (lista_frutas)
+del lista_frutas[:] #aqui deleta a lista inteira
+print (lista_frutas)
+
+print('==================')
+#criando lista vazia
+lista_vazia = []
+lista_vazia.append("Adriana") #adicionando um item a lista_vazia
+print(lista_vazia)
+print('==================')
+
+#sort para ordenar a lista numericamente
+lista_valores = [4, 9, 501, 102, 322, 546, 5, 27, 17, 56, 2]
+lista_valores.sort()
+print(lista_valores)
+#reverse para ordenar a lista de trás pra frente/para reverter
+lista_valores.sort(reverse=True)
+print(lista_valores)
+#inverter a lista
+lista_valores.reverse()
+print(lista_valores)
+
