@@ -23,8 +23,25 @@ print ('Depois da listcomp = ', linguagens)
 
 print('==================')
 
+x = [1, 2, 3, 4, 5]
+y = []
+for i in x:
+    y.append(i ** 2)
+
+print('Valores de x: ', x)
+print('Seus valores ao quadrado são: ', y)
+
+print('==================')
+
+print('Usando list comprehension:')
+y = [i**2 for i in x]
+print('Valores de x: ', x)
+print('Seus valores ao quadrado são: ', y)
+
 #map
-print('====Exemplo de map====')
+print('==================')
+print('Exemplo de map')
+
 linguagens = "Python Java JavaScript C C# Go Kothin Ruby".split()
 nova_lista = map(lambda x: x.lower(), linguagens)
 print(f'A nova lista é = {nova_lista}\n')
